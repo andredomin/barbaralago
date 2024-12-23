@@ -25,7 +25,7 @@ const Dates = () => {
             initial={{ x: -100, opacity: 0 }} 
             animate={ isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }} className="date_item">
-            <h2 className="date_content__location"> Madrid, Spain</h2>
+            <h2 className="date_content__location"> <span>Madrid, Spain</span></h2>
               <p className="date_content__text">1 Jun</p>
               </motion.div>
               <motion.div ref={ref}

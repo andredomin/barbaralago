@@ -19,8 +19,8 @@ const Contact = () => {
         animate={isInView ? { x: 100, opacity: 1 } : {}}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="formulario__title">WW BOOKINGS:</h2>
-        <a className="formulario__links" href="mailto:asierb4bookings.net">
+        <h2 className="formulario__title"><span>WW BOOKINGS:</span></h2>
+        <a className="formulario__links" href="asierb4bookings.net">
           asierb4bookings.net
         </a>
       </motion.div>
@@ -31,7 +31,7 @@ const Contact = () => {
         animate={isInView ? {  x: 100, opacity: 1 } : {}}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }} // Con un retraso
       >
-        <h2 className="formulario__title">SOUNDCLOUD</h2>
+        <h2 className="formulario__title"><span>SOUNDCLOUD</span></h2>
         <a
           className="formulario__links"
           href="https://soundcloud.com/barbaralago"

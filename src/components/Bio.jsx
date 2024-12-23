@@ -17,13 +17,13 @@ const Bio = () => {
             <motion.p ref={ref}
             initial={{ y: -100, opacity: 0 }} 
             animate={ isInView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }}> Bárbara Lago comes from a small town in the north of Spain. In 2015, she settled in A Coruña and developed musically starting her career as a DJ.
+            transition={{ duration: 0.8, ease: "easeOut" }}> Bárbara Lago comes from a small town in <span>the north of Spain.</span><br /><br /> In 2015, she settled in <span>A Coruña</span> and developed musically starting her career as a DJ.
 
 
-Recently she has performed in big festivals like a Monegros Festival, Ultra, Verknipt, A Summer History, Dreambeach, Blackworks Festival, Gate Festival and big clubs like a Fabrik, Florida 135,  Industrial Copera, Family Club, Afrobar, Audiodrome… 
+<br /><br />Recently she has performed in big festivals like a <span>Monegros Festival</span>, Ultra, Verknipt, A Summer History, Dreambeach, <span>Blackworks Festival</span>… 
 
 
-She just published her first EP Emergency Control under the Spanish records label No Mercy, and has participated in some VA's of labels such as Reckless with your track Bass In The F Place.</motion.p>
+<br /><br />She just published her first EP Emergency Control under the Spanish records label <span>No Mercy</span>, and has participated in some VA's of labels such as Reckless with your track <span>Bass In The F Place.</span></motion.p>
             <motion.img ref={ref}
             initial={{ y: 100, opacity: 0 }} 
             animate={ isInView ? { y: 0, opacity: 1 } : {}}
