@@ -40,26 +40,30 @@ html, body{
   margin: 0 auto;
   max-width: 100%;
 }
-
+.navbar{
+  display: none;
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
 .navbar__list{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Parkinsans';
+  
+}
+
+.navbar__list > li{
+  margin-right: 2vw;
+}
+.navbar__list > li > a{
+  font-size: 1.25rem;
   color: #FFFFFA;
-  display: flex;
-  font-size: 1em;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-  padding-left: 5%;
+  font-weight: bolder;
 }
 
 a{
   text-decoration: none;
   color: #FFFFFA;
-}
-
-#navbar__bio,#navbar__releases,#navbar__dates,#navbar__media,#navbar__contact{
-
-  padding-left: 5.4%;
-
 }
 
 .video_container{
@@ -207,10 +211,27 @@ p{
     height: 100%;
     overflow-y: hidden;
   }
-  .navbar__list{
+  .navbar{
+    display: flex;
     width: 100%;
+    margin-left: 10%;
+  }
+  .navbar__list{
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
     display: flex;
     justify-content: center;
+  }
+
+  .navbar__list > li{
+    width: 16%;
+    padding: 1vw;
+    font-size: 1rem;
+  }
+  #navbar__dates{
+    margin-left: 5%;
   }
   .video_container{
     width: 100%;
@@ -227,17 +248,9 @@ p{
 }
 
 @media (max-width: 395px) {
-  .navbar__list{
-    max-width: 100%;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
-  .navbar__list > li{
-    padding-right: 0.25vw;
-    padding-left: 0.25vw;
-    font-size: 0.75rem;
+  
+  .navbar{
+    display: none;
   }
 
   .barbara_dj{
