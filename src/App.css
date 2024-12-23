@@ -221,11 +221,34 @@ p{
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 395px) {
+  .navbar__list{
+    max-width: 100%;
+    width: 100%;
+    padding-right: 10%;
+  }
+
+  .navbar__list > li{
+    padding-right: 5vw;
+    font-size: 0.75rem;
+  }
 
   .barbara_dj{
     width: 100%;
     display: flex;
+  }
+
+  .bio_content{
+    width: 100%;
+    display: flex;
+  }
+
+  .bio_content > p{
+    width: 15%;
+  }
+  #barbara_bio{
+    width: 85%;
+    height: auto;
   }
 
   .barbara_dj h1{
