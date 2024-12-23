@@ -229,12 +229,14 @@ p{
 @media (max-width: 395px) {
   .navbar__list{
     max-width: 100%;
-    width: 100%;
-    padding-right: 10%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   .navbar__list > li{
-    padding-right: 5vw;
+    padding-right: 0.25vw;
+    padding-left: 0.25vw;
     font-size: 0.75rem;
   }
 
