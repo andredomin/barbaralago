@@ -27,7 +27,7 @@ She just published her first EP Emergency Control under the Spanish records labe
             <motion.img ref={ref}
             initial={{ y: 100, opacity: 0 }} 
             animate={ isInView ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }} id='barbara_bio' src='./src/assets/img/barbara_bio.jpg' />
+            transition={{ duration: 0.8, ease: "easeOut" }} id='barbara_bio' src='/assets/img/barbara_bio.jpg' />
         </div>
     </div>
 </>

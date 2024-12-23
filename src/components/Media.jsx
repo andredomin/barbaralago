@@ -28,14 +28,14 @@ const Media = () => {
       </motion.h1>
       <div className="barbara_grid">
         {[
-          './src/assets/img/barbara_media.jpg',
-          './src/assets/img/barbara_media-2.jpg',
-          './src/assets/img/barbara_media-3.jpg',
-          './src/assets/img/barbara_media-4.jpg',
-          './src/assets/img/barbara_media-5.jpg',
-          './src/assets/img/barbara_media-6.jpg',
-          './src/assets/img/barbara_media-7.mp4',
-          './src/assets/img/barbara_media-8.mp4',
+          '/assets/img/barbara_media.jpg',
+          '/assets/img/barbara_media-2.jpg',
+          '/assets/img/barbara_media-3.jpg',
+          '/assets/img/barbara_media-4.jpg',
+          '/assets/img/barbara_media-5.jpg',
+          '/assets/img/barbara_media-6.jpg',
+          '/assets/img/barbara_media-7.mp4',
+          '/assets/img/barbara_media-8.mp4',
         ].map((src, index) => (
           src.endsWith(".mp4") ? (
             <motion.video

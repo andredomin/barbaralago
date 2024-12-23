@@ -22,7 +22,7 @@ const Releases = () => {
             animate={ isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }} className='bio_content'>
             <p className="releases_item">EP Emergency Control - 2023</p>
-            <img id='emergency_control' src='./src/assets/img/emergency_control.jpg' />
+            <img id='emergency_control' src='/assets/img/emergency_control.jpg' />
         </motion.div>
     </div>
 </>
