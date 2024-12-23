@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+/* Initializers */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+  
+}
+
+html, body{
+  max-width: 100%;
+  height: 100%;
+  background-color: #000103;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+/* Heading and Navbar */
+.barbara_dj{
+  padding-top: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barbara_dj h1{
+  font-family: 'Parkinsans';
+  color: #FF312E;
+  font-size: 3rem;
+  font-weight: bolder;
+  word-spacing: 1vw;
+  text-shadow: -2.5px 1px 1px #fffffa8e;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.navbar__list{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #FFFFFA;
+  display: flex;
+  font-size: 1em;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  padding-left: 5%;
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFA;
+}
+
+#navbar__bio,#navbar__releases,#navbar__dates,#navbar__media,#navbar__contact{
+
+  padding-left: 5.4%;
+
+}
+
+.video_container{
+  width: 100%;
+}
+
+.video_container__video{
+  height: 100%;
+  width: 100%;
+}
+
+/* BIO */
+
+.section{
+  color: #FFFFFA;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bio_content{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+p{
+  color: #FFFFFA;
+  font-family: 'Partisans';
+  font-size: 0.75rem;
+  flex: 1;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 10vh;
+}
+
+#barbara_bio{
+  flex: 1;
+  border-radius: 5px;
+  padding-top: 10vh;
+  padding-left: 10%;
+}
+
+#emergency_control{
+  flex: 1;
+  border-radius: 5px;
+  padding-top: 10vh;
+  padding-left: 10%;
+}
+
+.releases_item{
+  font-family: 'Partisans';
+  font-size: 2rem;
+}
+.date_content{
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.date_item{
+  padding-top: 1vh;
+  display: flex;
+  justify-content: space-between;
+}
+.date_content__location{
+  width: 70%;
+  font-family: 'Parkinsans';
+  font-size: 1rem;
+  color: #FFFFFA;
+  
+  padding-left: 10%;
+  
+}
+
+.date_content__text{
+  width: 20%;
+  font-family: 'Parkinsans';
+  padding: 0 ;
+  margin: 0 ;
+}
+
+.barbara_grid{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  overflow: hidden;
+  justify-items: center;
+}
+
+#barbara_grid__item{
+  padding-top: 10vh;
+  max-width: 50%;
+}
+
+.formulario{
+  padding-top: 5vh;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-item{
+  padding-top: 10vh;
+  display: block;
+}
+
+.formulario__title{
+  font-size: 0.75rem;
+  font-family: 'Parkinsans';
+  color: #FFFFFA;
+  flex: 1;
+}
+
+.formulario__links{
+  font-size: 0.75rem;
+  font-family: 'Parkinsans';
+  color: #FFFFFA;
+  flex: 1;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  #bio{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #bio p{
+  font-family: 'Parkinsans';
+  font-size: 1.5rem;
+  }
+  #media{
+    height: 100%;
+  }
+
+  .barbara_grid{
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .navbar__list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .video_container{
+    width: 100%;
+  }
+  .video_container__video{
+    width: 60%;
+    margin-left: 20%;
+  }
+  .formulario{
+
+    padding-bottom: 10%;
+
+  }
+}
+
+@media (max-width: 380px) {
+
+  .barbara_dj{
+    width: 100%;
+    display: flex;
+  }
+
+  .barbara_dj h1{
+    font-size: 2.25rem;
+    white-space: nowrap;
+    flex-shrink: 1;
+    max-width: 100%;
+  }
+}
