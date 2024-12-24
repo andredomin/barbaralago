@@ -6,13 +6,11 @@ import Releases from './components/Releases'
 import Dates from './components/Dates'
 import Media from './components/Media'
 import Contact from './components/Contact'
-import BurgerMenu from './components/BurgerMenu'
 function App() {
   
 
   return (
     <>
-    <BurgerMenu />
     <Navbar />
     <Header />
     <Bio />
