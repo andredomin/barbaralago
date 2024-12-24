@@ -1,42 +1,58 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+
 const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => setIsOpen(!isOpen);
+
+    const ToggleMenu = () => setIsOpen(!isOpen);
+
+    // Función para manejar el clic y cerrar el menú
+    const handleLinkClick = (e, sectionId) => {
+        e.preventDefault();  // Prevenir el comportamiento predeterminado del enlace
+
+        // Realizar el desplazamiento suave
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Cerrar el menú después de un pequeño retraso
+        setTimeout(() => {
+            setIsOpen(false);
+        }, 200);  // 200ms de retraso para permitir que el desplazamiento ocurra
+    };
 
     return (
         <>
             <div className="burger_container">
-                <div className="burger_icon" onClick={toggleMenu}>
+                <div className="burger_icon" onClick={ToggleMenu}>
                     <div className={`line ${isOpen ? 'open' : ''}`}></div>
                     <div className={`line ${isOpen ? 'open' : ''}`}></div>
                     <div className={`line ${isOpen ? 'open' : ''}`}></div>
                 </div>
-            </div>
 
-            {/* Menú desplegable */}
-            {isOpen && (
-                <ul className="burger_menu">
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }} id='burger__home'><a href="#home" onClick={() => {setIsOpen(false)}}>HOME</a></motion.li>
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, ease: "easeOut" }} id='burger__bio'><a href="#bio" onClick={() => {setIsOpen(false)}}>BIO</a></motion.li>
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1.2, ease: "easeOut" }} id='burger__releases'><a href="#releases" onClick={() => {setIsOpen(false)}}>RELEASES</a></motion.li>
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1.4, ease: "easeOut" }} id='burger__dates'><a href="#dates" onClick={() => {setIsOpen(false)}}>DATES</a></motion.li>
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1.6, ease: "easeOut" }} id='burger__media'><a href="#media" onClick={() => {setIsOpen(false)}}>MEDIA</a></motion.li>
-                    <motion.li initial={{ y: -100, opacity: 0 }} 
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1.8, ease: "easeOut" }} id='burger__contact'><a href="#contact"onClick={() => {setIsOpen(false)}}>CONTACT</a></motion.li>
-                </ul>
-            )}
+                {isOpen && (
+                    <div className="burger_menu">
+                        <li id='burger__home'>
+                            <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>HOME</a>
+                        </li>
+                        <li id='burger__bio'>
+                            <a href="#bio" onClick={(e) => handleLinkClick(e, 'bio')}>BIO</a>
+                        </li>
+                        <li id='burger__releases'>
+                            <a href="#releases" onClick={(e) => handleLinkClick(e, 'releases')}>RELEASES</a>
+                        </li>
+                        <li id='burger__dates'>
+                            <a href="#dates" onClick={(e) => handleLinkClick(e, 'dates')}>DATES</a>
+                        </li>
+                        <li id='burger__media'>
+                            <a href="#media" onClick={(e) => handleLinkClick(e, 'media')}>MEDIA</a>
+                        </li>
+                        <li id='burger__contact'>
+                            <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')}>CONTACT</a>
+                        </li>
+                    </div>
+                )}
+            </div>
         </>
     );
 };
