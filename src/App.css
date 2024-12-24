@@ -19,7 +19,85 @@ html, body{
   overflow-y: auto;
 }
 
+/* Burger Menu */
 
+.burger_container{
+  position: absolute;
+  right: 4vw;
+  z-index: 1;
+  width: 30vw;
+  height: 7vh;
+  overflow-y: hidden;
+  margin-left: 40vw;
+}
+.burger_icon{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.line{
+position: relative;
+margin-top: 1vh;
+width: 80%;
+height: 5px;
+background-color: #FFFFFA;
+transition: all 0.3s ease;
+}
+
+.line.open{ 
+  width: 25%
+}
+.line.open:nth-child(1) {
+  transform: rotate(45deg) translateX(65%);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translateX(65%);
+  
+}
+
+.burger_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  background-color: #000103;
+  list-style: none;
+  padding: 50px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centrar los enlaces verticalmente */
+  overflow-y: auto; /* Solo permite scroll si el contenido es demasiado largo */
+}
+
+.burger_menu li {
+  margin: 15px 0;
+}
+
+.burger_menu li a {
+  font-family: 'Parkinsans';
+  color: #FFFFFA;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.burger_menu li a:hover {
+  color: #FF312E;
+}
 
 /* Heading and Navbar */
 .barbara_dj{
@@ -147,6 +225,7 @@ p{
 .date_content__text{
   width: 20%;
   font-family: 'Parkinsans';
+  font-size: 1rem;
   padding: 0 ;
   margin: 0 ;
 }
@@ -178,14 +257,14 @@ p{
 }
 
 .formulario__title{
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: 'Parkinsans';
   color: #FFFFFA;
   flex: 1;
 }
 
 .formulario__links{
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: 'Parkinsans';
   color: #FFFFFA;
   flex: 1;
@@ -194,6 +273,10 @@ p{
 /* Media Queries */
 
 @media (min-width: 768px) {
+  .burger_container{
+    display: none;
+  }
+
   #bio{
     max-width: 100%;
     overflow: hidden;
