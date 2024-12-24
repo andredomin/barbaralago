@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
-import BurgerMenu from "./BurgerMenu";
 const Navbar = () => {
     return (
       <>
             <div className='barbara_dj'>
                 <h1>BARBARA LAGO</h1>
             </div>
-            <BurgerMenu />
             <motion.div 
             initial={{ y: 100, opacity: 0 }} // Posición inicial: fuera de pantalla abajo
             animate={{ y: 0, opacity: 1 }}  // Posición final: en su lugar
