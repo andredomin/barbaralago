@@ -104,7 +104,7 @@ transition: all 0.3s ease;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: 2.5%;
 }
 
 .barbara_dj h1{
@@ -116,6 +116,12 @@ transition: all 0.3s ease;
   text-shadow: -2.5px 1px 1px #fffffa8e;
   margin: 0 auto;
   max-width: 100%;
+}
+
+.barbara_media{
+  padding-top: 8vh;
+  width: 80%;
+  margin-left: 10%;
 }
 .navbar{
   display: none;
@@ -276,6 +282,12 @@ p{
     scroll-behavior: smooth;
   }
   
+  .barbara_media{
+    padding-top: 8vh;
+    width: 80%;
+    margin-left: 10%;
+  }
+
   .burger_container{
     display: none;
   }

@@ -4,9 +4,7 @@ const Header = () => {
   return (
     <> 
         <div id="home" className="video_container">
-            <video className="video_container__video" autoPlay preload="auto" muted loop>
-                <source src="/assets/img/barbara_header.mp4" type="video/mp4" />   
-            </video>
+            <img className="barbara_media" src="/assets/img/barbara_header.gif" alt="barbara_lago_header" />
         </div>
     </>
   )
