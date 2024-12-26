@@ -182,14 +182,14 @@ p{
   color: #FFFFFA;
   font-family: 'Partisans';
   font-size: 0.75rem;
-  flex: 1;
+  
   padding-left: 10%;
   padding-right: 5%;
   padding-top: 10vh;
 }
 
 #barbara_bio{
-  flex: 1;
+  
   border-radius: 5px;
   padding-top: 10vh;
   padding-left: 10%;

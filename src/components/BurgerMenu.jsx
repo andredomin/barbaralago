@@ -5,20 +5,20 @@ const BurgerMenu = () => {
 
     const ToggleMenu = () => setIsOpen(!isOpen);
 
-    // Función para manejar el clic y cerrar el menú
-    const handleLinkClick = (e, sectionId) => {
-        e.preventDefault();  // Prevenir el comportamiento predeterminado del enlace
 
-        // Realizar el desplazamiento suave
+    const handleLinkClick = (e, sectionId) => {
+        e.preventDefault();  
+
+       
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
 
-        // Cerrar el menú después de un pequeño retraso
+        
         setTimeout(() => {
             setIsOpen(false);
-        }, 200);  // 200ms de retraso para permitir que el desplazamiento ocurra
+        }, 200);  
     };
 
     return (
